@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="game">
+        <div class="game-controls">
+            <button class="newGame"><img src="img/plus.svg" alt="New Game Icon">NEW GAME</button>
+            <div class="game-controls-bottom">
+                <button class="rollDice"><img src="img/continuous.svg" alt="Redo Icon">ROLL DICE</button>
+                <button class="holdScore"><img src="img/download.svg" alt="Download Icon">HOLD</button>
+            </div> <!-- .game-controls-bottom end -->
+            <img src="img/dice5.svg" alt="Dice Icon" class="diceIcon">
+        </div> <!-- .game-controls end -->
+        <div class="player1">
+            <h1 id="player1Id">PLAYER 1</h1>
+            <h3 class="score">0</h3>
+            <div class="current">
+                <h5>CURRENT</h5>
+                <h5 class="currentScore">0</h5>
+            </div> <!-- .current end -->
+        </div> <!-- .player1 end -->
+        <div class="player2">
+            <h1 id="player2Id">PLAYER 2</h1>
+            <h3 class="score">0</h3>
+            <div class="current">
+                <h5>CURRENT</h5>
+                <h5 class="currentScore">0</h5>
+            </div> <!-- .current end -->
+        </div> <!-- .player2 end -->
+    </div> <!-- .game end -->
+<script src="js/main.js"></script>
+</body>
+</html>
