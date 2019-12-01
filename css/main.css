@@ -33,6 +33,9 @@ body {
 
 #player1Id {
     color: #777;
+}
+
+.currentPlayer {
     border-bottom: solid .2rem purple;
 }
 
