@@ -24,7 +24,7 @@ function switchCurrentPlayer() {
 }
 
 function setDiceIcon(randomNum) {
-    if( randomNum === 0 || randomNum === 1 ) {
+    if( randomNum === 1 ) {
         diceIcon.src = "img/dice1.svg";
     } else if( randomNum === 2 ) {
         diceIcon.src = "img/dice2.svg";
@@ -90,10 +90,10 @@ newGameButton.addEventListener("click", (evt) => {
 
 // Randomly selecting the dice
 diceRollButton.addEventListener("click", (evt) => {
-    let randomNum = Math.floor(Math.random() * 7);
+    let randomNum = Math.floor(Math.random() * 6) + 1;
     diceIcon.style.display = "inline";
     setDiceIcon(randomNum);
-    if( randomNum === 0 || randomNum === 1 ) {
+    if( randomNum === 1 ) {
         currentScore = 0;
         updateCurrentScore(currentScore);
         switchCurrentPlayer();
@@ -118,3 +118,8 @@ holdButton.addEventListener("click", (evt) => {
         currentScores[i].innerHTML = 0;
     }
 });
+
+
+
+
+
